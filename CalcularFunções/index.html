@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Função</title>
+</head>
+<body>
+  <input type="number" id="valorX" placeholder="Digite o valor de x">
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado"></p>
+
+  <script>
+    function calcular() {
+      // Obter o valor de x digitado pelo usuário
+      const x = parseFloat(document.getElementById('valorX').value);
+
+      // Chamar a função para calcular o valor da função
+      const resultado = calcularValorFuncao(x);
+
+      // Exibir o resultado na página
+      document.getElementById('resultado').textContent = `O valor da função para x = ${x} é: ${resultado}`;
+    }
+  </script>
+</body>
+</html>
